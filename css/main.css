@@ -1,0 +1,200 @@
+/* 전체 body 스타일 설정 */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 위쪽에 고정*/
+    height: 100vh;
+    padding: 20px;
+    overflow-y: scroll; /* 스크롤 허용 */
+}
+
+/*메인 컨테이너*/
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 0;
+    border: 1px #000000;
+    width: 100%;
+    max-width: 450px;
+    min-height: 600px; /*최소 높이 설정*/
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+/* 헤더 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+    text-transform: uppercase; /* 대문자 */
+    font-weight: bold;
+}
+
+/* 섹션 스타일 */
+section {
+    position: relative;
+    min-height: 250px; /* 최소 높이 */
+}
+
+/* 섹션 제목 스타일 */
+section h2 {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 10px 0;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+/* 고정된 섹션 스타일 */
+.fixed-section {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    z-index: 2;
+    padding-bottom: 10px;
+}
+
+/* 휴지통 버튼 스타일 */
+#clear-button {
+    background: none;
+    font-size: 20px;
+}
+
+/* 할 일 목록 스타일 */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    overflow-y: auto;
+    max-height: 200px; /* 최대 높이 설정 */
+    margin-top: 10px; /* 섹션 제목과의 간격 */
+}
+
+/* 개별 할 일 항목 스타일 */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border-bottom: 1px dashed #ccc; /* 영수증 느낌의 점선 구분 */
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: grab;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #f8f8f8;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li.dragging {
+    opacity: 0.6;
+}
+
+/* 기한 날짜 */
+.due-date {
+    margin-left: 20px;
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* 입력 필드 */
+.input-container {
+    display: flex;
+    gap: 5px; /* 간격 조금 좁게 */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 6px 8px;
+    border-radius: 0;
+    border: 1px dashed #ccc; /* 점선 테두리로 변경 */
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: border 0.3s;
+}
+
+/* 날짜 선택 필드 스타일 */
+input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 0;
+    border: 1px dashed #ccc;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 0; /* 원형이 아닌 직사각형 버튼으로 변경 */
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5f646a;
+}
+
+/* 스크롤바 스타일 */
+ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+ul::-webkit-scrollbar-track {
+    background-color: #f1f3f5;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #ced4da;
+    border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background-color: #adb5bd;
+}
