@@ -1,5 +1,7 @@
 https://jny4867.github.io/DC_Project1/
 
+
+
 ## **팀명**
 
 Runners (프로그래머스 데브코스 프론트엔드 2-1팀)
@@ -71,7 +73,7 @@ PaceMaker - WHAT’S NEXT?
 
 •	할 일 리스트가 한 화면에 표시 가능한 개수를 초과하면 스크롤 생성
 
-## 유지보수
+## 수정사항
 
 엔터를 치면 add 되도록 하기 위해 keypress 이벤트 리스너 추가
 
