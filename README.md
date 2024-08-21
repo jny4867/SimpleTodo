@@ -4,11 +4,11 @@ https://jny4867.github.io/DC_Project1/
 
 ## **팀명**
 
-Runners (프로그래머스 데브코스 프론트엔드 2-1팀)
+Runners
 
 ## **이름**
 
-PaceMaker - WHAT’S NEXT?
+PaceMaker
 
 ## **설명**
 
